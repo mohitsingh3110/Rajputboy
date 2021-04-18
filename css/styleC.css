@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 50%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+}
+
+.container{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.lg-heading{
+     font-size: 3.5rem;
+     text-align: center;
+     text-transform: uppercase;
+}
+
+.md-heading{
+    padding: 2rem;
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: red;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333333;
+}
+
+.text-grey{
+    color: #555555;
+}
+
+.btn{
+    color:rgba(128, 8, 8, 0.801);
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary{
+    background-color: #ffffff;
+    border-radius: 10em;
+}
+
+.btn-primary:hover{
+    background-color: rgb(119, 117, 117);
+}
+
+.navbar{
+    padding: 1rem;
+    background-color: #263238;
+}
+
+
+.header .navbar a{
+    color: white;
+}
+
+.header .logo{
+    color: white;
+    float: left;
+    font-size: 3.0rem;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: .10em;
+}
+
+.header .navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+.header .navbar .nav-item{
+    display: inline;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.socialsite{
+    padding-bottom: 3rem;
+}
+
+.container .socialsite a{
+    padding-bottom: 3rem;
+    color: black;
+    margin: 10px 12px;
+}
+
+.social-media-links i{
+    margin: 2rem;
+}
+
+.contact-form{
+    padding: 5rem 0;
+    background-color: #f7f7f7;
+}
+
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.company-details{
+    float: left;
+    width: 49%;
+}
+
+.form-wrapper .form{
+    font-size: 1.6rem;
+    float: right;
+    width: 49%;
+
+}
+
+.form h1::after{
+    content: '';
+    display: block;
+    width: 100%;
+}
+
+.form-wrapper label{
+    display: block;
+}
+
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 60%;
+}
+
+.form-wrapper .form .form-group{
+    margin-bottom: 1rem;
+}
+
+.form-wrapper .form label::after{
+    content: '';
+    color: #e63946;
+}
+
+.form-wrapper .form textarea{
+    width: 80%;
+    height: 150px;
+    padding: 1rem;
+}
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 500px)
+{
+    html{
+        font-size: 50%;
+    }
+    .header .logo{
+        font-size: 2.5rem;
+    }
+    .header .navbar .nav-item{
+        display: inline;
+        padding: 0.5rem;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper .company-details{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+}
